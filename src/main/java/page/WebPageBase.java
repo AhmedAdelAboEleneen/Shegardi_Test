@@ -3,10 +3,10 @@ package page;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
-public class PageBase {
+public class WebPageBase {
 
     // create constructor
-    public PageBase(WebDriver driver) {
+    public WebPageBase(WebDriver driver) {
 
         PageFactory.initElements(driver, this);
     }

@@ -9,11 +9,11 @@ import org.testng.annotations.*;
 
 import java.util.concurrent.TimeUnit;
 
-public class TestBase {
+public class WebTestBase {
 
     public static WebDriver driver;
 
-
+@Test
     @BeforeTest
     @Parameters({"browser"})
     public void startDriver(@Optional("chrome") String browserName) {
@@ -40,7 +40,7 @@ public class TestBase {
     @AfterTest
     public void stopDriver() {
 
-        driver.quit();
+      //  driver.quit();
     }
 
     // Take Screenshot when test case fail and add it in screenshot folder

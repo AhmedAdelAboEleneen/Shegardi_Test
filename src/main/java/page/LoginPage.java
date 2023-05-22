@@ -4,28 +4,28 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class LoginPage extends PageBase {
+public class LoginPage extends WebPageBase {
 
-    @FindBy(xpath = "//*[@id=\"kt_header\"]/kt-topbar/div/kt-user-profile/div/div[1]/div/span[1]")
+    @FindBy(id = "kt_header")
     public WebElement checkHi;
     @FindBy(id = "email")
-    private WebElement email;
+    private WebElement emailTx;
     @FindBy(id = "password")
-    public WebElement password;
+    private WebElement passwordTx;
     @FindBy(id = "btn_login kt_login_signin_submit")
-    public WebElement loginBt;
+    private WebElement loginBt;
     @FindBy(xpath = "//*[@id=\"content\"]/div/a")
-    public WebElement logoutBt;
+    private WebElement logoutBt;
 
     public LoginPage(WebDriver driver) {
         super(driver);
     }
 
-    public void AddEmail (String value){
-        email.sendKeys(value);
+    public void AddEmail (String email){
+        emailTx.sendKeys(email);
     }
-    public void AddPassWord (String value){
-        password.sendKeys(value);
+    public void AddPassWord (String password){
+        passwordTx.sendKeys(password);
     }
     public void clickLogin (){
         loginBt.click();
