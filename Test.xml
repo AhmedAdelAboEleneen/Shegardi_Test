@@ -4,8 +4,8 @@
 
     <test name="Test">
         <classes>
-            <class name="test.WebTestBase"/>
-            <class name="test.MobileTestBase"/>
+            <class name="mobileUserTest.SplashTest"/>
+            <class name="webTest.LoginTest"/>
         </classes>
     </test>
 

@@ -1,7 +1,7 @@
-package test;
+package webTest;
 
 import org.testng.annotations.Test;
-import page.LoginPage;
+import webPage.LoginPage;
 
 public class LoginTest extends WebTestBase {
     LoginPage loginPage;

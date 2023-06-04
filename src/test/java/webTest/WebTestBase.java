@@ -1,4 +1,4 @@
-package test;
+package webTest;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
