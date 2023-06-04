@@ -1,0 +1,1 @@
+{"uuid":"b3f3088f-3188-4000-bc76-c9880b91a92d","name":"Regression Suite","children":["984b11c8-47f4-42d4-951b-e8d924419263"],"befores":[{"name":"startDriver","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1684777930683,"stop":1684777945504}],"afters":[],"links":[],"start":1684777930645,"stop":1684777969396}
